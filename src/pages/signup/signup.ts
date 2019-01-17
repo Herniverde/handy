@@ -7,6 +7,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+export class user {
+    name: string;
+    email: string;
+    pw: string;
+}
+
 
 @IonicPage()
 @Component({
