@@ -9,5 +9,25 @@
 
 
 <ion-content padding>
+  <ion-list>
+        <ion-item>
+          <ion-label floating>Name</ion-label>
+          <ion-input [(ngModel)]="item.name" type="text"></ion-input>
+        </ion-item>
 
+        
+        <ion-item>
+          <ion-label floating>Description ( Name, Description, Quantity, Location)</ion-label>
+          <ion-input [(ngModel)]="item.description" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label floating>Price</ion-label>
+          <ion-input [(ngModel)]="item.price" type="number"></ion-input>
+        </ion-item>
+       
+
+    </ion-list>
+   <button ion-button full (click)="buy()">Buy</button>
+  <button ion-button full (click)="cancel()">Cancel</button>
 </ion-content>
